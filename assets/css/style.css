@@ -27,6 +27,9 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 @media screen and (min-width: 800px) {
@@ -97,6 +100,38 @@ main {
   }
 }
 
+.logoHTML div div {
+  background-color: white;
+  width: fit-content;
+  padding: 5px 5px 0 5px;
+}
+.logoHTML div {
+  width: fit-content;
+  padding: 5px;
+  background-color: rgba(3, 109, 134, 1);
+}
+.logoHTML {
+  background-color: #a02571;
+  width: fit-content;
+  padding: 5px;
+  float: left;
+  margin-right: 10px;
+}
+.logoHTML img {
+  margin: 0;
+  aspect-ratio: 1-1;
+}
+.txt {
+  position: relative;
+}
+.underline {
+  position: absolute;
+  left: -50%;
+  bottom: -15%;
+  transform: translate(50%);
+  opacity: 0.5;
+}
+
 section {
   background-color: #e3e3e3;
   padding: 1.5em 1em;
@@ -107,11 +142,15 @@ section {
 section h2 {
   text-align: center;
   color: #333;
-  font-size: 1.4rem;
-  margin-bottom: 1.7rem;
+  font-size: 1.5rem;
   font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  position: absolute;
+  right: 50%;
+  bottom: 100%;
+  transform: translatey(50%);
+  width: 40%;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
