@@ -430,7 +430,7 @@ footer a {
 .social {
   position: fixed;
   bottom: 20px; /* Dal fondo viewport */
-  right: 20px; /* Dal bordo destro */
+  right: -15px; /* Dal bordo destro */
   display: flex;
   flex-direction: column; /* TUTTI i pulsanti uno sopra l'altro */
   gap: 12px; /* Spazio uniforme tra ogni pulsante */
@@ -438,7 +438,6 @@ footer a {
 }
 
 .social > div {
-  /* Non serve flex orizzontale - ogni div contiene un solo pulsante */
   margin: 0; /* Reset margini */
   padding: 0;
 }
@@ -451,6 +450,15 @@ footer a {
   border-radius: 15%; /* Cerchio perfetto (border-radius 50%) */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  color: #3f6bca;
+  background-color: rgba(255, 255, 255, 0.626);
+  border: 2px solid white;
+  box-shadow: 0px 0px 8px #3f6bca;
+}
+
+.pink button {
+  box-shadow: 0px 0px 8px #a02571;
+  color: #a02571;
 }
 
 .social button:hover {
@@ -461,4 +469,16 @@ footer a {
 
 .social button:active {
   transform: translateY(0) scale(0.98);
+}
+
+@media screen and (min-width: 700px) {
+  .first {
+    position: fixed;
+    top: 15px;
+  }
+
+  .second {
+    position: fixed;
+    top: 85px;
+  }
 }
